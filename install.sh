@@ -1,8 +1,8 @@
 #!/bin/sh
 
-apk add zsh curl wget git
+apt install zsh curl wget git
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-apk add neovim
+apt install neovim
 
 cat .gitconfig > $HOME/.gitconfig
 
